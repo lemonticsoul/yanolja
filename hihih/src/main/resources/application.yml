@@ -1,0 +1,17 @@
+spring.application.name: hihih
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/hi
+    username: root
+    password: 4232
+  jpa:
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
